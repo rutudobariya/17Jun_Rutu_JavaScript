@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var a=parseInt(document.getElementById("a").value);
+            var b=parseInt(document.getElementById("b").value);
+            var c =a+b;
+            document.getElementById("result").innerHTML="additionof number is:"+c;
+
+        }
+    </script>
+</head>
+<body>
+    <p id="result"></p>
+    <form>
+        Enter a number :<input type="text" id="a" placeholder="enter a value">
+        <br> <br>
+        Enter b number :<input type="text" id="b" placeholder="enter b value">
+        <br> <br>
+        <button type="button" onclick="add()">add</button>
+
+    </form>
+</body>
+</html>

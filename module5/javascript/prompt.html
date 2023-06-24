@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+    <style>
+        body{
+            margin:0;
+            padding:50px;
+        }
+        #calc{
+            height: 20vh;
+            width:50%;
+            background-color: aqua;
+            margin-left:25%;
+            marin-top:5%;padding:60px;
+        }
+        .calculator{
+            height: auto;
+            width: 100%;
+        }
+        .calculator button{
+            padding:10px 25px;
+            margin-left:5%;
+            marin-top:50px;
+
+        }
+    </style>
+    <script>
+        function add(){
+            var a =parseInt(prompt("enter a value:"));
+            var b =parseInt(prompt("enter b value:"));
+            var c=a+b;
+            alert("addition is :"+c);
+        }
+
+        function sub(){
+            var a =parseInt(prompt("enter a value:"));
+            var b =parseInt(prompt("enter b value:"));
+            var c=a-b;
+            alert("subtraction is :"+c);
+        }
+
+        function mul(){
+            var a =parseInt(prompt("enter a value:"));
+            var b =parseInt(prompt("enter b value:"));
+            var c=a*b;
+            alert("multiplication  is :"+c);
+        }
+
+        function div(){
+            var a =parseInt(prompt("enter a value:"));
+            var b =parseInt(prompt("enter b value:"));
+            var c=a/b;
+            alert("divison is :"+c);
+        }
+    </script>
+</head>
+<body>
+    <section id="calc">
+        <div class="calculator">
+            <button type="button" id="btn" onclick="add()">Addition</button>
+            <button type="button" id="btn" onclick="sub()">Subtraction</button>
+            <button type="button" id="btn" onclick="mul()">Multiplication</button>
+            <button type="button" id="btn" onclick="div()">Divison</button>
+
+        </div>
+    </section>
+</body>
+</html>
