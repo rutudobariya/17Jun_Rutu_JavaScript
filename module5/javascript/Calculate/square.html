@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square</title>
+    <link rel="stylesheet" href="style.css">
+ <style>
+        *{
+            margin-left:30px;
+           
+        }
+    button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color:#131337;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+
+        }
+
+        #result {
+            border: none;
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        input {
+            font-size:20px;
+            width: 300px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        form {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        h2{
+            margin: 50px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Square  For Any Number</h2> 
+    <form action="home.html">
+    <label for="pri">Enter Number:-
+     <input type="number" id="no">
+ </label> <br> <br>
+ 
+ <button type="button" onclick="sqrt1()">Calculate</button>
+     <button type="reset">Reset</button> <br> <br>
+ 
+     <label for="">Result:-
+         <input type="text" id="result" readonly style="border: none;outline: none;color:red;">
+     </label> <br> <br>
+ 
+     <button type="submit">Home</button>
+ </form>
+     <script>
+         
+ 
+         function sqrt1() {
+             let num = document.getElementById("no").value;
+             let result = document.getElementById("result");
+             result.value = num * num;
+         }
+ 
+     
+     </script>
+  
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lower - case</title>
+    <link rel="stylesheet" href="../../JavaScript/Calculate/style.css">
+    <style>
+       
+        *{
+           margin-left:30px;
+          
+       }
+   button {
+           padding: 15px 25px;
+           border: none;
+           border-radius: 5px;
+           background-color:#131337;
+           color: #fff;
+           font-size: 22px;
+           cursor: pointer;
+
+       }
+
+       .results {
+           border: none;
+           color: red;
+           font-size: 22px;
+       }
+
+       input {
+           font-size:20px;
+           width: 300px;
+       }
+
+       label {
+           font-size: 25px;
+       }
+
+       form {
+           margin: auto;
+           margin-top: 50px;
+       }
+
+       h2 {
+           margin: 60px 0;
+           font-size: 25px;
+       }
+
+   </style>
+
+</head>
+<body>
+    <h2>Calculate Compund Interset</h2>
+    <form action="home.html">
+    <label for="pri">Enter your First Name:-
+        <input type="text" id="fnm" onblur="uppercase()">
+    </label> <br> <br>
+
+    <label for="pri">Enter your last Name:-
+        <input type="text" id="lnm" onblur="uppercase()">
+    </label> <br> <br>
+
+    <label for="pri">Address:-
+        <textarea name="address" id="address" cols="50" rows="05" onblur="uppercase()"></textarea>></textarea><br><br>
+    </label> <br> <br>
+
+    <button type="button"> Submit</button>
+    <button type="reset">Reset</button> <br> <br>
+    <button type="submit">Home</button>
+</form>
+  <script>
+    function uppercase()
+    {
+        var fnm = document.getElementById("fnm");
+        fnm.value = fnm.value.toUpperCase();
+
+        var lnm = document.getElementById("lnm");
+        lnm.value = lnm.value.toUpperCase();
+
+        var add = document.getElementById("address");
+        add.value = add.value.toUpperCase();
+    }
+
+
+  </script>
+</body>
+</html>

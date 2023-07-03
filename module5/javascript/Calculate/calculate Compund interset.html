@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Compund Interset</title>
+    <link rel="stylesheet" href="../../JavaScript/Calculate/style.css">
+    <style>
+       
+        *{
+           margin-left:30px;
+          
+       }
+   button {
+           padding: 15px 25px;
+           border: none;
+           border-radius: 5px;
+           background-color:#131337;
+           color: #fff;
+           font-size: 22px;
+           cursor: pointer;
+
+       }
+
+       .results {
+           border: none;
+           color: red;
+           font-size: 22px;
+       }
+
+       input {
+           font-size:20px;
+           width: 300px;
+       }
+
+       label {
+           font-size: 25px;
+       }
+
+       form {
+           margin: auto;
+           margin-top: 50px;
+       }
+
+       h2 {
+           margin: 60px 0;
+           font-size: 25px;
+       }
+
+   </style>
+</head>
+<body>
+    <h2>Calculate Compund Interset</h2>
+    <form action="home.html">
+    <label for="pri">Principal Amount:-
+        <input type="text" id="pri">
+    </label> <br> <br>
+
+    <label for="year">Interset Rate Par Year:-
+        <input type="text" id="year">
+    </label> <br> <br>
+
+    <label for="pri">Number of Year:-
+        <input type="number" id="noyear">
+    </label> <br> <br>
+
+    <button type="button" onclick="interst()">Calculate</button>
+    <button type="reset">Reset</button> <br> <br>
+
+    <label for="">Amount:-
+        <input type="text" id="totalamt" readonly>
+    </label> <br> <br>
+
+    <label for="">Compund Interset:-
+        <input type="text" id="comint" readonly>
+    </label> <br> <br>
+
+    <button type="submit">Home</button>
+</form>
+
+    <script>
+        function interst()
+        {
+            
+        
+            let p = document.getElementById('pri').value;
+            let r = document.getElementById('year').value;
+            let t = document.getElementById('noyear').value;
+
+            let total = document.getElementById("totalamt");
+            let ci = document.getElementById("comint");
+
+            let a = p * (1 + r / 100) ** t;
+            total.value = a.toFixed(2);
+            ci.value = (a - p).toFixed(2);
+       
+    
+        }
+    </script>
+
+</body>
+</html>

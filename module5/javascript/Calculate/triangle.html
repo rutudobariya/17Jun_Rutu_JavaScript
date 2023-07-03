@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Triangle</title>
+    <style>
+        *{
+            margin-left:30px;
+           
+        }
+    button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color:#131337;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+
+        }
+
+        #result {
+            border: none;
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        input {
+            font-size:20px;
+            width: 300px;
+            font-weight: 800;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        form {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        h2{
+            margin: 50px 0;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h2>Area Of Square</h2> 
+    <form action="home.html">
+        <label for="principal">
+            Enter Base : <input type="number" id="base">
+        </label> <br><br>
+        <label for="value">
+            Enter Height : <input type="number" id="height" >
+        </label> <br><br>
+        <button type="button" onclick="triangle()">Calculate</button>
+        <button type="Reset">Reset</button> <br><br>
+        <label>
+            Result : <input id="result" type="text" class="final" readonly></input>
+        </label><br><br>
+        <button type="submit">Home</button>
+ </form>
+ <script>
+    function triangle() {
+            let b =document.getElementById("base").value;
+            let h =document.getElementById("height").value;
+            let result = document.getElementById("result");
+            result.value = (b*h)/2;
+            //result.value=(1/2)*b*h;
+    }
+ </script>
+</body>
+</html>
