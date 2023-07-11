@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Logout System</title>
+  <script src="script.js"></script>
+</head>
+<body>
+    <center>
+  <h2>Login Page</h2>
+  <form id="loginForm">
+    <label>Email:</label>
+    <input type="text" id="emailField"><br><br>
+    <label>Password:</label>
+    <input type="password" id="passwordField"><br><br>
+    <select id="roleField">
+      <option value="manager">Manager</option>
+      <option value="user">User</option>
+      <option value="developer">Developer</option>
+    </select><br><br>
+    <button type="button" onclick="login()">Login</button>
+  </form>
+  
+  <div id="dashboard" style="display: none;">
+    <h2>Welcome to the Dashboard</h2>
+    <button type="button" onclick="logout()">Logout</button>
+  </div>
+</center>
+  <script>
+    // User credentials
+const users = [
+  { email: 'manager@gmail.com', password: 'manager', role: 'manager' },
+  { email: 'user@gmail.com', password: 'user', role: 'user' },
+  { email: 'developer@gmail.com', password: 'developer', role: 'developer' }
+];
+
+// Function to check login credentials
+function login() {
+  const email = document.getElementById('emailField').value;
+  const password = document.getElementById('passwordField').value;
+  const role = document.getElementById('roleField').value;
+
+  const user = users.find(u => u.email === email && u.password === password && u.role === role);
+  
+  if (user) {
+    // Successful login, redirect to the dashboard
+    document.getElementById('loginForm').reset();
+    document.getElementById('loginForm').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+  } else {
+    alert('Invalid credentials!');
+  }
+}
+
+// Function to logout
+function logout() {
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('loginForm').style.display = 'block';
+}
+
+  </script>
+</body>
+</html>

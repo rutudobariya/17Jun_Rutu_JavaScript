@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onsubmit click Events</title>
+    <script>
+        function test()
+        {
+            if(document.frm.nm.value=="")
+            {
+                alert("please enter your name *")
+                document.frm.nm.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="wwlcome.html" name="frm" onsubmit="retun test(this.value)">
+    Enter name :<input type="text" name="nm" placeholder="Enter Your name*">
+    <br><br>
+    <button type="submit">Add name</button>
+    </form>
+</body>
+</html>

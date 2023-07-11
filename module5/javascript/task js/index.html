@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flipkart</title>
+  <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/x-Icon">
+  <link rel="stylesheet" href="../../../Module-5/JavaScript/task js/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+
+<body>
+  <header
+    <div class="a">
+      <i class="fa-solid fa-phone fa-xl" style="color: blue;"></i></i> <span style="color:black;font-size: 20px;font-weight: 600;">(+91)91-9023465365</span>
+      <input type="serch" value="" placeholder="Enter Your Product"></i>
+   
+
+
+  
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.google.com"><i class="fa-brands fa-google"></i></a> &nbsp; &nbsp;
+     <a href="" style="font-size: 26px; color:blue;"> cart<i class="fa-solid fa-cart-shopping"></i></a>
+     <button style="height:30px;width:40px;background-color:red;color:white;">0</button>
+     <a href=""><span class="login">Login</span></a>
+
+    </div>
+ 
+
+
+
+
+    <div class="menu">
+      <ul>
+        <li style="color:white; font-weight: 600;font-size:28px;"> <i class="fa-solid fa-cart-shopping fa-sm"></i>  
+          Shraddha Ecommerce</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Women's Product</a></li>
+        <li><a href="">men's product</a></li>
+        <li><a href="">Kid's product</a></li>
+        <li><a href="">Offers</a></li>
+        <li><a href="">Accounts</a></li>
+        <li><a href="contact.html">Contactus</a></li>
+
+  </header>
+
+  <div class="slider">
+    <img src="../task js/image/WhatsApp Image 2023-06-26 at 7.43.08 PM.jpeg">
+  </div>
+
+  <div class="main">
+  <div class="dynamic">
+    <h3>Dynamic Products</h3>
+    <p>Best of Dynamic protucts.</p>
+    <button class="view">View All</button>
+  </div>
+
+  <div class="shoopy" style="display: grid;
+  grid-template-columns: auto auto auto;">
+    <div class="shoopy1">
+      <div class="i-1">
+        <div class="t">
+          <img src="../task js/image/choli.jpg" alt="">
+        </div>
+        <div class="t2 ttt1">Fancy Chaniya Choli</div>
+        <div class="t3">Rs.3900 4500</div>
+        <button class="t4"><a href="">Click For More Detail</a></button>
+      </div>
+    </div>
+
+
+    <div class="i-2">
+      <div class="t">
+        <img src="../task js/image/wesern choli.jpg" alt="" height="260px">
+      </div>
+      <div class="t2 ttt1">Western Choli</div>
+      <div class="t3">Rs.3999 5000</div>
+      <button class="t4"><a href="">Click For More Detail</a></button>
+    </div>
+
+    <div class="i-3">
+      <div class="t">
+        <img src="../task js/image/traditional.jpg" alt="" height="260px">
+      </div>
+      <div class="t2 ttt1">traditional Choli</div>
+      <div class="t3">Rs.2950 3500</div>
+      <button class="t4"><a href="">Click For More Detail</a></button>
+
+    </div>
+    </div>
+  
+</div>
+<div class="main">
+<div class="dynamic">
+  <h3>Best's Of Shirts</h3>
+  <p>Best of Dynamic protucts.</p>
+  <button class="view">View All</button>
+</div>
+
+
+<div class="shoopy2" >
+  <div class="shoopy3" >
+    <div class="i-4">
+      <div class="t">
+        <img src="../task js/image/shirts/1.jpg" alt="">
+      </div>
+      <div class="t2 ttt1">formal shirts</div>
+      <div class="t3">Rs.3900 4500</div>
+      <button class="t4"><a href="">Add to cart</a></button>
+    </div>
+  </div>
+
+
+  <div class="i-5">
+    <div class="t">
+      <img src="../task js/image/shirts/2.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">Formal Shirts</div>
+    <div class="t3">Rs.3999 5000</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+  </div>
+
+  <div class="i-6">
+    <div class="t">
+      <img src="../task js/image/shirts/3.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">Formal Shirts</div>
+    <div class="t3">Rs.2950 3500</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+
+  </div>
+  <div class="i-7">
+    <div class="t">
+      <img src="../task js/image/shirts/4.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">Formal Shirts</div>
+    <div class="t3">Rs.2950 3500</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+
+  </div>
+</div>
+</div>
+
+<div class="main">
+<div class="dynamic">
+  <h3>Best Of shirts</h3>
+  <p>Best of Dynamic protucts.</p>
+  <button class="view">View All</button>
+</div>
+
+<div class="shoopy4" >
+  <div class="shoopy5" >
+    <div class="i-8">
+      <div class="t">
+        <img src="../task js/image/mix shirts/shirts.jpg" alt="">
+      </div>
+      <div class="t2 ttt1">formal shirts</div>
+      <div class="t3">Rs.3900 4500</div>
+      <button class="t4"><a href="">Add to cart</a></button>
+    </div>
+  </div>
+
+
+  <div class="i-9">
+    <div class="t">
+      <img src="../task js/image/mix shirts/tshirts.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">T-shirts</div>
+    <div class="t3">Rs.3999 5000</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+  </div>
+
+  <div class="i-10">
+    <div class="t">
+      <img src="../task js/image/mix shirts/tshirts1.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">T-shirts</div>
+    <div class="t3">Rs.2950 3500</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+
+  </div>
+  <div class="i-11">
+    <div class="t">
+      <img src="../task js/image/mix shirts/huddy.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">Huddy Tshirts</div>
+    <div class="t3">Rs.2950 3500</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+
+  </div>
+</div>
+</div>
+
+<div class="main">
+<div class="dynamic">
+  <h3>Best Of shirts</h3>
+  <p>Best of Dynamic protucts.</p>
+  <button class="view">View All</button>
+</div>
+
+
+
+
+<div class="shoopy6" >
+  <div class="shoopy7" >
+    <div class="i-12">
+      <div class="t">
+        <img src="../task js/image/children/baby frock.jpg" alt="">
+      </div>
+      <div class="t2 ttt1">Frock</div>
+      <div class="t3">Rs.3900 4500</div>
+      <button class="t4"><a href="">Add to cart</a></button>
+    </div>
+  </div>
+
+
+  <div class="i-13">
+    <div class="t">
+      <img src="../task js/image/children/cotton dresses.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">Cotton Dreeses</div>
+    <div class="t3">Rs.3999 5000</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+  </div>
+
+  <div class="i-14">
+    <div class="t">
+      <img src="../task js/image/children/one piece dresses.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">One-Pieces Dresses</div>
+    <div class="t3">Rs.2950 3500</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+
+  </div>
+  <div class="i-15">
+    <div class="t">
+      <img src="../task js/image/children/party wear.jpg" alt="" height="260px">
+    </div>
+    <div class="t2 ttt1">Party-wear Dresses</div>
+    <div class="t3">Rs.2950 3500</div>
+    <button class="t4"><a href="">Add to cart</a></button>
+
+  </div>
+</div>
+</div>
+
+
+<footer class="container">
+  
+      
+         
+              <section class="explore">
+                  <h2><a href="#">Aboutus</a></h2>
+                  <p class="item1"><a href="../Coffee Cubes/index.html">Electronics</a></p>
+                  <p class="item1"><a href="">Home applience</a></p>
+                  <p class="item1"><a href="#">Furniture</a></p>
+                  <p class="item1"><a href="#">Offeres</a></p>
+                 
+              </section>     
+         
+              <section class="explore">
+                  <h2><a href="#">Contactus</a></h2>
+                  <p class="item2"><a href="#">Electroics</a></p>
+                  <p class="item2"><a href="#">Home applience</a></p>
+                  <p class="item2"><a href="#">Furniture</a></p>
+                  <p class="item1"><a href="#">Offeres</a></p>
+
+              </section>
+      
+              <section class="explore">
+                  <h2><a href=""><a href="#">Our Brand</a></h2>
+                  <p class="item2"><a href="#">Electroics</a></p>
+                  <p class="item2"><a href="#">Home applience</a></p>
+                  <p class="item2"><a href="#">Furniture</a></p>
+                  <p class="item2"><a href="#">Offeres</a></p>
+                </section>
+
+                <section class="explore">
+                  <h2><a href=""><a href="#">Office Address</a></h2>
+                  <p class="item2"><a href="#">Address:7QVR+3RX, Jagnath Plot,</a></p>
+                  <p class="item2"><a href="#">Rajkot, Gujarat, 360001</a></p>
+                  <p style="color:green;">Hours:open <span style="color:white;">Closes 8PM</span></p>
+         </section>
+         
+      </footer>
+
+      <footer class="main-container">
+        Copyright © 2012-2025 All right reserved company
+      </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src=""></script>
+</body>
+
+</html>

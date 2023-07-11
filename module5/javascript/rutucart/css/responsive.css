@@ -1,0 +1,42 @@
+@media (max-width:425px) {
+
+    .h1 {
+        font-size: 25px;
+    }
+
+    .title1 img {
+        width: 70%;
+    }
+
+    .ctitle {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .ctitle {
+        margin-top: 45px;
+    }
+
+    .title2 {
+        width: 300px;
+    }
+
+    .title3 {
+        width: 300px;
+    }
+
+    .card_p {
+        margin-top: 25px;
+    }
+
+    .card_foot {
+        flex-wrap: wrap;
+    }
+
+    .discount .card_p {
+        margin: -3px 0px 30px 0px;
+    }
+    .discount .card_p {
+        font-size: 15px;
+    }
+}

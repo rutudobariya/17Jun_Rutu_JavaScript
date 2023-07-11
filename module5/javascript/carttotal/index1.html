@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .total {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shopping Cart</h1>
+
+  <table id="cart-table">
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+  </table>
+
+  <button onclick="addItemToCart()">Add Item</button>
+  <button onclick="calculateTotal()">Calculate Total</button>
+
+  <script>
+    function addItemToCart() {
+      var item = prompt("Enter item name:");
+      var price = parseFloat(prompt("Enter item price:"));
+      var quantity = parseInt(prompt("Enter item quantity:"));
+
+      var cartTable = document.getElementById("cart-table");
+      var row = cartTable.insertRow(-1);
+
+      var itemNameCell = row.insertCell(0);
+      itemNameCell.innerHTML = item;
+
+      var priceCell = row.insertCell(1);
+      priceCell.innerHTML = "$" + price.toFixed(2);
+
+      var quantityCell = row.insertCell(2);
+      quantityCell.innerHTML = quantity;
+
+      var subtotal = price * quantity;
+      var subtotalCell = row.insertCell(3);
+      subtotalCell.innerHTML = "$" + subtotal.toFixed(2);
+    }
+
+    function calculateTotal() {
+      var cartTable = document.getElementById("cart-table");
+      var rows = cartTable.getElementsByTagName("tr");
+
+      var total = 0;
+      for (var i = 1; i < rows.length; i++) {
+        var row = rows[i];
+        var subtotalCell = row.cells[3];
+        var subtotal = parseFloat(subtotalCell.innerHTML.substring(1));
+        total += subtotal;
+      }
+
+      var totalRow = cartTable.insertRow(-1);
+      var totalCell = totalRow.insertCell(0);
+      totalCell.innerHTML = "Total";
+      totalCell.className = "total";
+
+      var emptyCell = totalRow.insertCell(1);
+      var emptyCell2 = totalRow.insertCell(2);
+
+      var totalAmountCell = totalRow.insertCell(3);
+      totalAmountCell.innerHTML = "$" + total.toFixed(2);
+      totalAmountCell.className = "total";
+    }
+  </script>
+
+</body>
+</html>

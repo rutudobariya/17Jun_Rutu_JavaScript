@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+
+    <style>
+        body
+        {
+          margin: 0;
+          padding: 0;overflow-x: hidden;
+        }
+        #add{
+            width: 90%;
+            height: auto;
+            margin: 0;
+            margin-left: 1%;
+            display: grid;   
+            grid-template-columns: auto auto auto;
+            background-color: #131337;
+            color:white;
+            font-weight: 800;  
+            padding: 25px;       
+        }
+        h1{
+            text-align: center;
+            font-size: 48px;
+            letter-spacing: 2px;
+            text-decoration: underline;
+        }
+    </style>
+    <script src="../../JavaScript/Function/js/address.js"></script>
+</head>
+<body>
+    <h1>Our Resturants Location</h1>
+    <section id="add">
+        <div class="address1">
+            <script>
+                document.write(add1());
+            </script>
+        </div>
+        <div class="address2">
+            <script>
+                document.write(add2());
+            </script>
+        </div>
+        <div class="address3">
+            <script>
+                document.write(add3());
+            </script>
+        </div>
+    </section>
+</body>
+</html>

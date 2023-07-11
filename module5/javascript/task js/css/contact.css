@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height:70px;
+    width: 100%;
+    background-color: lightgray;
+
+}
+input{
+    margin-left:50px;
+    margin-top:20px;
+    outline: none;
+    height: 30px;
+    width:30%;
+    border:none;
+    border-radius: 5px;
+}
+i{
+    padding-left:5px;
+ font-size: 25px;
+   margin-left:20px;
+   color:blue;
+    }
+
+
+
+.menu {
+    
+    height:70px;
+    width:100%;
+   background-color:blue;
+   margin-top:20px;
+
+}
+.menu a {
+    color:white;
+    font-weight: 600;
+    font-size:20px;
+    /* margin-left: 5px; */
+    text-decoration: none;
+
+}
+.menu i{
+    font-size:40px;
+    height:100px;
+    width:auto;
+    color:white;
+    margin-top:5px;
+}
+  li {
+    display: inline;
+    margin-left: 20px;
+    padding-left:5px;
+    list-style: none;
+    line-height: 80px;
+   
+    text-decoration: none;
+}
+
+
+.contactus{
+    height: 60px;
+    width:200px;
+    background-color: blue;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    margin-top:100px;
+    margin-left:30px;
+   font-size: 20px;
+    font-weight: 600;
+}
+.address{
+    margin-top:50px;
+    font-size:35px;
+    font-weight: 600;
+    color:green;
+    margin-left:60px;
+}
+.map{
+    border:solid 2px blue;
+    border-width: 0 1px 0 0;
+}
+.google{
+    margin-left:80px;
+    height:400px;
+    width:80%;
+    /* border:1px solid black; */
+    display: grid;
+    grid-template-columns:auto auto;
+}
+iframe{
+    margin-left:10px;
+    margin-top:5px;
+}
+form{
+    margin-left:20px;
+    margin-top:5px;
+    height:200px;
+    width:500px;
+    border:2px solid black;
+   
+    
+}

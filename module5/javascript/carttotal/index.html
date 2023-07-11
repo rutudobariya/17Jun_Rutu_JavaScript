@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../carttotal/CSS/style.css">
+    <script src="../carttotal/CSS/js/subtotal.js"></script>
+</head>
+<body>
+   <section id="cart">
+    <h1 style="margin-left: 50px;">My shooping cart</h1>
+    <table align="center">
+        <tr>
+            <th>View cart(1)</th>
+        </tr>
+        <tr>
+            <th>#</th>
+            <th>pname</th>
+            <th>photo</th>
+            <th>price</th>
+            <th>qty</th>
+            <th>description</th>
+            <th>action</th>
+            
+        </tr>
+
+        <tr align="center">
+            <td>1001</td>
+            <td>fasttrack watch</td>
+            <td><img src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?cs=srgb&dl=pexels-joey-nguy%E1%BB%85n-2113994.jpg&fm=jpg" alt="" height="95px" width="95px"></td>
+            <td><input type="number"id="qty" value="1" min="1" max="5" onchange="sbtot()"> </td>
+            <td><input type="text" id="price" value="5500" readonly style="border: none; width:45px"></td>
+            <td>very nice products</td>
+            <td><a href="#">Delete</a></td>
+
+        </tr>
+        <tr>
+            <td colspan="7" align="right"><h2 style="padding: 8px; background-color: lightgreen; width: 50%; color:white">Subotal Rs. <label id="tot">5500</label></h2></td>
+  
+
+        </tr>
+        <tr>
+            <td colspan="7" align="right"><h2 style="padding:8px; background-color: lightgreen;width:30%;color:white;">discount.<label id="disc">550</label></h2></td>
+
+        </tr>
+
+        <tr>
+            <td colspan="7" align="right"><h2 style="padding:8px; background-color:lightgreen;width:30%;color:white;">grand total.<label id="dis">4950</label></h2></td>
+
+        </tr>
+    </table>
+   </section> 
+</body>
+</html>
