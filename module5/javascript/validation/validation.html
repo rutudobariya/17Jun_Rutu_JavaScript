@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tops Technologies</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        form{
+            background-color: azure;
+            height: 200px;
+            width: 400px;
+        }
+        #error 
+    {
+        color: red;
+        position: relative;
+    }
+    </style>
+    <script src="login.js"></script>
+    <script src="../validation/js/validaion.js"></script>
+</head>
+<body>
+   
+    <center>
+    <form  action="https://careercenter.tops-int.com"  name="frm" onsubmit="return valid(this.value)">
+       
+    <fieldset>
+        <h1><center>Tops</center></h1>
+        <h1><center>Career Center</center></h1>
+         <!-- <label for="mobile">mobile</label>
+        <br>
+        <input type="tel" name="mobile" id="mobile"  placeholder="email"> 
+
+        <span id="error"></span>
+        <br><br>  -->
+        <label for="email">email</label>
+        <br>
+        <input type="email" name="email"   placeholder="email"> <br>
+        <span id="error"></span>
+        <br><br> 
+       
+
+        <label for="pass">Password:</label>
+        <br>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <a href="../TASK/forgot_password.html">Forgot Password?</a>
+        <br>
+        <center>
+            <!-- <input type="submit" value="Login"> -->
+             <!-- <input type="button" name="login" onclick="loginus()"> --> 
+            <input type="submit" name="login" >
+
+        </center>
+    </fieldset>
+ </form>
+ <center>
+</body>
