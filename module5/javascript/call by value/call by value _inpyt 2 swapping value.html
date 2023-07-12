@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Field Swapping</title>
+  <script>
+    function swapFields() {
+      var field1 = document.getElementById("field1").value;
+      var field2 = document.getElementById("field2").value;
+
+      var temp = field1;
+      field1 = field2;
+      field2 = temp;
+
+      document.getElementById("field1").value ;
+      document.getElementById("field2").value ;
+
+      var message = "Swapped values: Field 1 = " + field1 + ", Field 2 = " + field2;
+      document.getElementById("result").textContent = message;
+    }
+  </script>
+</head>
+<body>
+  <form>
+    Field 1: <input type="text" id="field1"><br>
+    Field 2: <input type="text" id="field2"><br>
+    <button type="button" onclick="swapFields()">Swap</button>
+  </form>
+  <p id="result"></p>
+</body>
+</html>
