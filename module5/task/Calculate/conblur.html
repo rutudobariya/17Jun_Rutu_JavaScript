@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uppercase Form Fields</title>
+  <script>
+    function convertToUppercase(field) {
+      field.value = field.value.toUpperCase();
+    }
+
+    function generateTable() {
+      var table = document.getElementById('resultTable');
+      var inputs = document.getElementsByTagName('input');
+
+      // Clear existing table rows
+      while (table.rows.length > 0) {
+        table.deleteRow(0);
+      }
+
+      // Generate table rows with uppercase values
+      for (var i = 0; i < inputs.length; i++) {
+        var value = inputs[i].value.toUpperCase();
+        var row = table.insertRow(i);
+        var cell = row.insertCell(0);
+        cell.innerHTML = value;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Uppercase Form Fields</h1>
+  <form>
+    <label for="field1">Field 1:</label>
+    <input type="text" id="field1" onblur="convertToUppercase(this)">
+    <br>
+    <label for="field2">Field 2:</label>
+    <input type="text" id="field2" onblur="convertToUppercase(this)">
+    <br>
+    <label for="field3">Field 3:</label>
+    <input type="text" id="field3" onblur="convertToUppercase(this)">
+    <br>
+    <button type="button" onclick="generateTable()">Generate Table</button>
+  </form>
+  <br>
+  <table id="resultTable"></table>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Marks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin-left:30px;
+           
+        }
+    button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color:#131337;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+
+        }
+
+        #result {
+            border: none;
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        input {
+            font-size:20px;
+            width: 300px;
+            font-weight: 800;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        form {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        h2{
+            margin: 50px 0;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <h2>Calculate Average Marks</h2>
+        <form action="index.html">
+        <label for="pri">
+            HTML Marks : <input type="number" id="html" placeholder="Enter Marks" required>
+        </label> <br><br>
+        <label for="principal">
+            CSS Marks : <input type="number" id="css" placeholder="Enter Marks " required>
+        </label> <br><br>
+        <label for="principal">
+            Java Script Marks : <input type="number" id="js" placeholder="Enter Marks" required>
+        </label> <br><br>
+        <label for="principal">
+            Bootstrap Marks : <input type="number" id="boot" placeholder="Enter Marks" required>
+        </label> <br><br>
+        <label for="principal">
+           React-js Marks : <input type="number" id="react" placeholder="Enter Marks" required>
+        </label> <br><br>
+        <button type="button" onclick="average()">Calculate</button>
+        <button type="Reset">Reset</button> <br><br>
+        <label>
+            Result : <input id="result" type="text"  readonly></input>
+        </label><br><br>
+        
+    </form>
+
+        <button type="submit">Home</button>
+    </form>
+
+    <script>
+
+        function average() {
+            let html = document.getElementById("html").value;
+            let css = document.getElementById("css").value;
+            let js = document.getElementById("js").value;
+            let boot = document.getElementById("boot").value;
+            let react = document.getElementById("react").value
+            let result = document.getElementById("result");
+            let totalmarks = parseInt(html) + parseInt(css) + parseInt(js)  + parseInt(boot) + parseInt(react);
+            result.value = ((totalmarks) / (5)).toFixed(2);
+        }
+    </script>
+
+</body>
+</html>

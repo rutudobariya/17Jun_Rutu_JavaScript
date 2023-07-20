@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin-left:30px;
+           
+        }
+    button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color:#131337;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+
+        }
+
+        #result {
+            border: none;
+            color: red;
+            font-size: 20px;
+        }
+
+        input {
+            font-size:20px;
+            width: 300px;
+            font-weight: 800;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        form {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        h2{
+            margin: 50px 0;
+        }
+
+    </style>
+
+<body>
+    <h2>Dynamically User Input</h2> 
+   <form action="home.html">
+   <label for="pri">Enter Name:-
+    <input type="text" id="nm">
+</label> <br> <br>
+
+<button type="button" id="btn1" onclick="user()">Calculate</button>
+    <button type="reset">Reset</button> <br> <br>
+
+    <!-- <label for="">Result:-
+        <input type="text" id="result" class="results" readonly>
+    </label> <br> <br> -->
+
+    <h3 id="demo">My name is: </h3>
+
+    <button type="submit">Home</button>
+</form>
+<script>
+    var nm =document.getElementById("nm");
+    var btn = document.getElementById("btn1");
+    var demo = document.getElementById("demo");
+    function user(){
+        demo.innerHTML = "my name is:"+nm.value;
+      }
+</script>
+
+</body>
+</html>
