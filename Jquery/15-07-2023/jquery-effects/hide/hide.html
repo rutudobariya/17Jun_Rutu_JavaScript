@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../hide/css/style.css'>
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <script>
+     $(document).ready(function(){
+        $("body").css({"width":"auto","margin":"0px","padding":"0px"});
+        $("#header").css({"width":"100%","height":"auto","backhround-color":"black","padding":"10px"});
+        $(".btn-login button").css({"margin-left":"0%","border":"none","background-color":"red","color":"white","padding":"8px"});
+        $("#bt_clk1").click(function(){
+            // $("#login-form").fadeToggle("slow");
+            // $("#login-form").fadeToggle("fast");
+            $("#login-form").hide(4500);
+        })
+     })
+    </script>
+</head>
+<body>
+    <section id="header">
+        <div class="btn-login">
+            <button id="bt_clk1">Hide Login Here</button>
+        </div>
+    </section>
+    <section id="login-form">
+        <div class="login">
+            <h2>Login form</h2>
+            <form>
+                <input type="text" name="name" placeholder="Username *" required>
+                <br><br>
+                <input type="password" name="password" placeholder="password *" required>
+                <br><br>
+                <input type="submit" id="btn" value="signin" name="name" placeholder="Username *" required>
+                <br><br>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

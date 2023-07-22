@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--jquery online cdn-->
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            //element selector
+            $("body").css({"background-color":"lightgray","margin":"opx","padding":"0px"});
+            //id selector
+            $("#header").css({"background-color":"blue","padding":"15px","display":"flex","flex-direction":"row"});
+            // class selector
+            $(".logo").css({"font-size":"20px","color":"white"});
+            $(".serch input").css({"font-size":"20px","width":"650px","height":"auto","padding":"3px","margin-left":"15%"});
+        })
+    </script>
+</head>
+<body>
+    <section id="header">
+        <div class="logo">flipkart</div>
+        <div class="serch">
+            <input type="text" name="serch" id="" placeholder="serch">
+        </div>
+    </section>
+</body>
+</html>
