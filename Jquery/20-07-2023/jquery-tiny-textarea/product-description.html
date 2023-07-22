@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>tiny-textarea</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <!--called jquery cdn online-->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      <!-- called jquery tiny text cdn-->
+      <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/jquery.tinymce.min.js" referrerpolicy="origin"></script>
+<script type="text/javascript">
+   tinymce.init({
+    selector:"#mytextarea"
+   });
+</script>
+</head>
+<body bgcolor="lightgray">
+    <center>
+        <form>
+            <label>Enter Product Descript</label>
+            <br><br>
+            <textarea  id="mytextarea" ></textarea>
+        </form>
+    </center>
+</body>
+</html>

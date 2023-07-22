@@ -1,0 +1,49 @@
+body{
+    background: -webkit-linear-gradient(left,lightgray,#3879D6);
+    background: -moz-linear-gradient(left,lightgray,#3879D6);
+    background: linear-gradient(to right,lightgray,#3879D6);
+
+}
+@font-face {
+    font-family: rutu-font;
+    src: url('../../../20-07-2023/jquery-bvalidator/font/living-hell/Living\ Hell.ttf');
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.header-text{
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-left: 10%;
+    font-family: rutu-font;
+
+}
+fieldset{
+    width: 30%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+input{
+    width: 250px;
+    height: auto;
+    padding:5px;
+}
+input[type="submit"]
+{
+    width: 100px;
+    height: auto;
+    padding:8px;
+    border:none;
+    background-color: blue;
+    color:white;
+}

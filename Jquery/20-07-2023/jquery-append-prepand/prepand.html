@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>prepand example</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--called jquery cdn online-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").addClass("header");
+            //append element
+           $("#btn").click(function(){
+            $("b").prepend("<b>Dobariya &nbsp;");
+           })
+        })
+    </script>
+    <style>
+    .header
+    {
+        width: 100%;
+        height: 100px;
+        background-color: blue;
+        padding:25px;
+    }
+    b{
+        color:white;
+        font-size: 25px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <b>Rutu jayantibhai</b>
+        <br><br>
+        <button id="btn">Prepand Surname</button>
+    </div>
+</body>
+</html>
