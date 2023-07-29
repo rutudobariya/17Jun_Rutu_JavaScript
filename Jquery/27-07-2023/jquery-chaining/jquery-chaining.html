@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery changing</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("div").hide(2000).toggle(2000);
+             
+            })
+        })
+    </script>
+    <style>
+         .block{
+            height: 200px;
+            width:200px;
+            background-color: black;
+            position: absolute;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn">jquery changing</button> 
+
+    <br>
+
+    <div class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda et ab quisquam, enim sapiente eveniet nostrum earum magnam, nulla error nobis quo, reprehenderit voluptate?</div>
+
+</body>
+</html>
