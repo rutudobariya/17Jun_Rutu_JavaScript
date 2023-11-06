@@ -1,0 +1,100 @@
+$container:30%;
+$height:auto;
+$container-fluid:50%;
+$text-success:green;
+$text-danger:red;
+$text-dark:black;
+$text-info:blue;
+$text-white:white;
+$overflow:hidden;
+$margin-auto:auto;
+$margin-left:2px;
+$bg-secondary:lightgray;
+$bg-sucess:lightseagreen;
+$bg-dark:black;
+$bg-white:white;
+$padding:35px;
+$padding1:7px;
+$d-flex:flex;
+$flex-direction:row;
+$border-radius:30px;
+$border-radius1:20px;
+$font-weight:800;
+$font-size:15px;
+$margin-top:10px;
+
+body 
+{
+    background-color: $bg-secondary;
+    overflow:hidden;
+    
+    
+   
+}
+.appointment-app
+{
+    width:350px;
+    height:$height;
+    margin: $margin-auto;
+    padding: $padding;
+    background-color:$bg-sucess;
+    background-repeat: no-repeat;
+    display: $d-flex;
+    flex-direction: $flex-direction;
+    border-radius:$border-radius;
+    margin-top:$margin-top;
+}
+h1{
+    margin-left:5px; font-size: 25px;
+}
+hr{
+    margin-left: 10px;
+}
+label{
+    color:$text-white;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+input[type="text"]
+{
+ width:auto;
+ padding:$padding1;
+ margin-left:$margin-left;
+ border-radius:$border-radius;
+
+}
+
+
+input[type="email"]
+{
+    margin-top:$margin-top;
+ padding:$padding1;
+ margin-left:$margin-left;
+ border-radius:$border-radius;
+
+}
+input[type="tel"]
+{
+    margin-top:$margin-top;
+    padding:$padding1;
+    margin-left:$margin-left;
+    border-radius:$border-radius;
+}
+input[type="submit"]
+{
+ width:60%;
+ padding:9px;
+ margin-left: 70px;
+ background-color:$bg-dark;
+ border-radius:$border-radius1;
+ color:$text-white;
+}
+input[type="button"]
+{
+ width:60%;
+ padding:9px;
+ margin-left: 70px;
+ background-color:$bg-dark;
+ border-radius:$border-radius1;
+ color:$text-white;
+}
