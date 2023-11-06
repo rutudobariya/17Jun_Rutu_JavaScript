@@ -1,0 +1,31 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+#parent 
+{
+  width: 70%;
+  height: auto;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.child1 
+{
+  width: 45%;
+  height: auto;
+  padding: 25px;
+  background-color: lightgray;
+}
+.child2 
+{
+  width: 70%;
+  height: auto;
+  padding: 25px;
+  background-color: gray;
+}
