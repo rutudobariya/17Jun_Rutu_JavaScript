@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;button
+{
+    width: 20%;
+    height: auto;
+    margin: 50px 10px;
+    background-color:crimson;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    align-items: center;
+    padding: 20px;
+}
