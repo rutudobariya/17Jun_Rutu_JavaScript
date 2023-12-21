@@ -1,0 +1,13 @@
+What is react components ?
+ components is a small peace of file that is save inside of react js with App.js it is called components 
+ components are reusables 
+ components name conventions is uppercase or camel case start with any components 
+
+
+ There are two types of components 
+  a) function components 
+  b) class components 
+
+
+  functional comonents : 
+    
