@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script>
+function openCity(evt, cityName) {
+
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<style type="text/css">.tabcontent {
+  display: none;
+}
+
+
+
+</style>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="nav-wrapper">
+        <ul>
+            <li><a href="index.html">HOME  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="about.html">ABOUT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="contact.html">CONTACT US </a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Header Section -->
+    <header class="header-wrapper">
+        <div class="row">
+            <div class="col">
+                <img src="images/recycling.png" class="logo" alt="" width="30%" height="80px">
+                <h1 style="margin-top: -15%; margin-left:40%; text-shadow: 1px 5px 4px; font-size: 30px;">Company Name</h1>
+            </div>
+            <div class="col">
+                <div class="search">
+                    <span><i class="fas fa-search"></i></span>
+                    <input type="text" placeholder="Search... " name="" id="">
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li><button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Web Layout</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Paris')">Logo</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Tokyo')">Banner</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'mumbai')">Flayer</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-wrapper" id="Web">
+        <div id="London" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.Although the company blurb needs to inform readers about what the company does, it needs to do this in a very focused way. Most companies offer many different types of products or services. The blurb is not the place to describe them all. Instead of listing the variety of things your company does, focus on the key items as an overview. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>Featured Content Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit corporis autem quo sequi temporibus adipisci. Laboriosam incidunt quaerat, quos impedit aliquam, exercitationem, esse ullam porro alias aspernatur enim atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores et harum repellat! Ipsa ipsum, aperiam, qui possimus totam, numquam laboriosam nulla suscipit consequuntur fugiat veritatis! Nesciunt consequuntur magni deleniti?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, tenetur, illum, aspernatur laudantium natus quis aperiam numquam inventore et molestiae expedita quibusdam voluptate cupiditate quidem iure. Tenetur ea voluptate suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, vel quibusdam officia ipsam voluptas corrupti eveniet eaque repellendus doloribus ipsa perspiciatis incidunt pariatur quo architecto commodi reiciendis! Ducimus, dolorum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore earum voluptate accusantium, cupiditate at optio delectus error nostrum, asperiores ullam distinctio laborum nam quo laudantium consequatur voluptatem eius voluptatibus?4</p>
+                <br><br>
+                <div class="read"> 
+                <a href="">Read More...</a>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+     <div id="Paris" class="tabcontent" style="display: block;">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.Although the company blurb needs to inform readers about what the company does, it needs to do this in a very focused way. Most companies offer many different types of products or services. The blurb is not the place to describe them all. Instead of listing the variety of things your company does, focus on the key items as an overview. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>About Our Logo</h1>
+                <p>Recycling is the process of converting waste materials into new materials and objects. The recovery of energy from waste materials is often included in this concept. The recyclability of a material depends on its ability to reacquire the properties it had in its original state.[1] It is an alternative to "conventional" waste disposal that can save material and help lower greenhouse gas emissions. It can also prevent the waste of potentially useful materials and reduce the consumption of fresh raw materials, reducing energy use, air pollution (from incineration) and water pollution.<br>
+                Recycling is a key component of modern waste reduction and is the third component of the "Reduce, Reuse, and Recycle" waste hierarchy.[2][3] It promotes environmental sustainability by removing raw material input and redirecting waste output in the economic system.[4] There are some ISO standards related to recycling, such as ISO 15270:2008 for plastics waste and ISO 14001:2015 for environmental management control of recycling practice.
+
+ </p>
+                <br><br>
+                <div class="read"> 
+                <a href="">Read More...</a>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+     <div id="Tokyo" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.Although the company blurb needs to inform readers about what the company does, it needs to do this in a very focused way. Most companies offer many different types of products or services. The blurb is not the place to describe them all. Instead of listing the variety of things your company does, focus on the key items as an overview. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>About Recycle Company Banner</h1>
+                <p> ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboriur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud ecepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br><br>
+                <div class="read"> 
+                <a href="">Read More...</a>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+     <div id="mumbai" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.Although the company blurb needs to inform readers about what the company does, it needs to do this in a very focused way. Most companies offer many different types of products or services. The blurb is not the place to describe them all. Instead of listing the variety of things your company does, focus on the key items as an overview. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>Flyer</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br><br>
+                <div class="read"> 
+                <a href="">Read More...</a>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+        <br><br><br>
+    </section>
+
+    <section class="welcome-wrapper">
+        <div class="row-1 row">
+            <div class="col-2">
+                <br><br>
+                <h1>Welcome To Our Site...</h1>
+                <hr>
+                <br><br><br>
+                <p>The lotus flower is regarded as the National Flower of India. Lotus symbolises beauty, purity and knowledge. It is an aquatic flower with round leaves floating on the water. It grows in freshwater lakes and shallow ponds. It is a beautiful flower which has an appealing fragrance and colour.</p>
+                <br><br>
+                <p>They come in different colours such as red, white, pink, yellow, etc. A rose plant has small and sharp thorns on its stem. The flower looks beautiful when it blooms in the garden. Rose symbolises beauty, love and compassion. The petals of a rose are soft and used in perfumes due to its fragrance.</p>
+                <br><br>
+                <p>The common sunflower (H. annuus) is an annual herb with a rough hairy stem 1–4.5 metres (3–15 feet) high and broad, coarsely toothed, rough leaves 7.5–30 cm (3–12 inches) long arranged in spirals. The attractive heads of flowers are 7.5–15 cm wide in wild specimens and often 30 cm or more in cultivated types.</p>
+                <br><br>
+                <p>Flowers carry a lot of importance in our lives. In India, no worship of God is complete without some kind of flower. Devotees make a garland of flowers to dedicate it to God. In addition, we also use flowers for special occasions like weddings.The bride and groom wear garlands of flowers to signify their marriage. In addition, flowers smell so good that we use it in different places by planting them in our garden. This way, the beauty of our place enhances.Flowers carry importance in each nook and corner of the world. They also come in use for making medicines. Similarly, we also make difference in fragrance perfumes from the flowers. Further, the butterflies, birds and bees take the flowers as food.Flowers carry a lot of importance in our lives. In India, no worship of God is complete without some kind of flower. Devotees make a garland of flowers to dedicate it to God. In addition, we also use flowers for special occasions like weddings.In many weddings, the bride carries a bouquet of flowers when she walks down the aisle. Thus, it is very symbolic in that sense. On special occasions of valentines and anniversary, we gift our partners’ beautiful flowers as a symbol of our love.</p>
+            </div>
+            <div class="col-3">
+                <br><br>
+                <h1>Latest Projects</h1>
+                <div class="projects">
+                    <br>
+                    <div class="row">
+                        <span><input type="checkbox"></span> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>Modern Web 2.0 Styled Web Templete</p>
+                    </div>
+                    <img src="images/web-1.webp" alt="" width="80%" height="300px">
+<br><br>
+                    <div class="row">
+                        <span><input type="checkbox"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>Banner Design</p>
+                    </div>
+                    <img src="images/banner.jpg" alt="" width="80%" height="150px">
+                    <br><br> 
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer-wrapper">
+        <div class="nav">
+        <ul>
+            <li>Pages :</li> &nbsp;&nbsp;&nbsp;
+            <li><a href="">Home</a></li>&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;
+            <li><a href="about.html">About us</a></li>&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="nav navwhite">
+        <ul>
+            <li>Our Activities :</li> &nbsp;&nbsp;&nbsp;
+            <li><a href="">Web Templete</a></li>&nbsp;&nbsp;&nbsp; _&nbsp;&nbsp;&nbsp;
+            <li><a href=""> Web Graphics</a></li>&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;
+             <li><a href=""> Logo</a></li>&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;
+            <li><a href=""> Banner</a></li>&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;
+            <li><a href=""> Flayer</a></li>&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;
+            <li><a href=""> Broucher etc. designing.</a></li>
+        </ul>
+    </div>
+    <hr>
+    <br>
+    <div class="nav">
+        <h3>
+        Copyright 2010 by Ariful tonu, All Right Reserved.
+        <br>
+        Design a Modern web 2.0 styled web layout.
+    </h3>
+    </div>
+    <br>
+    </footer>
+</body>
+</html>
