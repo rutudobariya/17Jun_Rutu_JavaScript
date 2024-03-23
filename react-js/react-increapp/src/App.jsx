@@ -1,36 +1,29 @@
-import List from "./List";
-import UpdateState from "./UpdateState";
+import List from './List'
+import UpdateState from './UpdateState'
 
-function App(){
+function App() {
 
-    const listData = [
-    {id:1, name:"rutu"},
-    {id:2, name:"dhevan"},
-    {id:3, name:"radhika"},
-
+  const listData = [
+    {id:1, name:"Rutu"},
+    {id:2, name:"Dhevan"},
+    {id:3, name:"Deep"},
   ]
 
-  return(
+  return (
     <>
-   
-    <div >
-      <h2 style={{marginLeft:"50%"}}>List View</h2>
-      {
-        listData.map((item)=>{
-          return(
-            <>
-            <p  style={{marginLeft:"50%"}}  key={item.id}><b>employee id & name is :- {item.id} {item.name} </b></p>
-            </>
-          )
-        })
-      }
-
-     
-    </div>
     <div>
-      <UpdateState/>
-    </div>
-    
+      <h1>List View</h1>
+       {
+        listData.map(({id,name})=>(
+          <List key={id} firstname={name}/>
+         
+        ))
+       }
+       </div>
+
+       <div>
+       <UpdateState/>
+       </div>
     </>
   )
 }
