@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* border: 5px solid red; */
+}
+
+/* Nav Bar */
+.nav-wrapper{
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+.nav-wrapper ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav-wrapper ul li{
+    margin-top: 15px;
+}
+.nav-wrapper ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;    
+}
+.nav-wrapper ul li a:hover{
+    color: yellow;
+}
+
+/* Header */
+.header-wrapper{
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(180deg , rgb(22, 22, 22),  rgb(147, 145, 145));
+}
+.row{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+}
+.col:first-child{
+    width: 40%;
+    margin-top: 10px;
+}
+.col:last-child{
+    width: 60%;
+    height: 100px;
+}
+.search{
+    float: right;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    display: flex;
+}
+.search span{
+    text-align: center;
+    background-color: #ccc;
+    width: 50px;
+}
+.search span i{
+    align-items: center;
+    margin-top: 5px;
+}
+.nav-bar{
+    width:100%;
+    height: 100px;
+    margin-top: 73px;
+}
+.nav-bar ul{
+    width: 100%;
+    margin-left: 150px;
+}
+.nav-bar ul li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-bar ul li button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ccc;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    margin-top: -50px;
+    border: 1px;
+}
+.nav-bar ul li button:active{
+    background: linear-gradient(180deg, orange, yellow);
+}
+.nav-bar ul li button:hover{
+    background: linear-gradient(180deg, orange, yellow);
+}
+
+/* services-wrapper */
+.services-wrapper{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, orange, rgb(255, 153, 0));
+    /* display: flex; */
+}
+.col{
+    width: 40%;
+}
+.services{
+    width: 100%;
+    height: auto;
+    background-image: url(images/services.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.services .row span input{
+    margin: 20px;       
+}
+.services .row p{
+    color: #fff;
+    margin-top:17px ;
+    font-size: 18px;
+}
+.para{
+    width: 80%;
+    margin-left: 10%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.col-1{
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 10px;
+    height: auto;
+}
+.col-1 p, .col-1 h1 , .col-1 a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.col-1 h1{
+    font-size: 32px;
+    margin-top: 20px;
+}
+.col-1 p{
+    word-spacing: 5px;
+}
+.col-1 .read{
+    text-align: end;
+}
+.col-1 a{
+    font-size: 22px;
+}
+
+
+/* welcome-wrapper */
+.welcome-wrapper{
+    width: 100%;
+    height: auto;
+    background: #ccc;
+}
+.welcome-wrapper .row{
+    display: flex;
+}
+.welcome-wrapper .row .col-2{
+    width: 60%;
+    height: auto;
+}
+.col-2 h1{
+    font-size: 32px;
+}
+.col-3{
+    width: 35%;
+    height: auto;
+    margin-left:4%;
+}
+.col-3 h1{
+    font-size: 32px;
+}
+.projects{
+    width: 90%;
+    margin-left: 5%;
+    margin-top:20px;
+    background: linear-gradient(180deg, orange, rgb(255, 153, 0));
+}
+.projects img{
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+
+/* footer-wrapper */
+.footer-wrapper{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+}
+.footer-wrapper .nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.footer-wrapper .nav ul li{
+    margin-top: 15px;
+    font-size: 22px;
+    color: rgb(131, 131, 131);
+}
+.footer-wrapper .nav ul li a{
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+
+    font-size: 18px;    
+}
+.footer-wrapper .nav ul li a:hover{
+    color: yellow;
+}
+.navwhite , .nav{
+    color: rgb(223, 222, 222) !important;
+}
+.footer-wrapper hr{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    height: 1px;
+    background-color: red !important;
+    border: 0;
+}
+
+

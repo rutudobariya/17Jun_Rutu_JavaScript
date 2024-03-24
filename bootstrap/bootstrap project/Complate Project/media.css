@@ -1,0 +1,110 @@
+@media screen and (max-width:920px) {
+    .nav-bar ul{
+        margin-left: 0;
+    }
+ .header-wrapper{
+    width: 100%;
+ }
+ .services-wrapper{
+    height: auto;
+ }
+ .services{
+    height: auto;
+ }
+ .services-wrapper .col-1{
+    height: auto;
+ }
+ .welcome-wrapper .row-1{
+    flex-direction: column;
+ }
+ .col-2, .col-3{
+    width: 100% !important;
+    margin-left: 10px;
+ }
+}
+
+
+@media screen and (max-width:860px){
+
+    .footer-wrapper {
+        height: auto;
+    }
+    .footer-wrapper .nav ul {
+        flex-direction: column;
+    }   
+}
+
+
+
+@media screen and (max-width:715px) {
+    .header-wrapper{
+        width: 100%;
+    }
+    .nav-bar{
+        font-size: 10px;
+    }
+    .services-wrapper .row{
+        flex-direction: column;
+    }
+    .services-wrapper .col, .services-wrapper .col-1{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:576px) {
+    .nav-bar ul li a{
+        padding: 14px;
+    }
+        .header-wrapper h1{
+    position: relative;
+    margin-left: 0px;
+ }
+ .nav-bar ul li button {
+    text-decoration: none;
+    padding: 10px 10px;
+    background: #ccc;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    margin-top: -50px;
+    -o-border-radius: 5px 5px 0 0;
+    border: 1px;
+}
+.header-wrapper .row .col h1 {
+    margin-top: -28% !important;
+    margin-left: 40%;
+    text-shadow: -3px 1px 4px;
+    font-size: 20px !important;
+}
+}
+
+@media screen and (max-width:480px) {
+    .nav-bar ul li a{
+        padding: 14px;
+    }
+     .header-wrapper h1{
+    position: relative;
+    margin-left: 0px;
+ }
+ .nav-bar ul li button {
+    text-decoration: none;
+    padding: 4px 4px;
+    background: #ccc;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    margin-top: -50px;
+    -o-border-radius: 5px 5px 0 0;
+    border: 1px;
+}
+.header-wrapper .row .col h1 {
+    margin-top: -28% !important;
+    margin-left: 40%;
+    text-shadow: -3px 1px 4px;
+    font-size: 20px !important;
+}
+}
