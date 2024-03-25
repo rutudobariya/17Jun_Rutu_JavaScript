@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>View cart</title>
+    <link rel="shortcut icon" href="https://cdn.imgbin.com/11/1/15/retail-icon-supermarket-icon-shopping-cart-icon-EbwMjG5P.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="JavaScript/min.js"></script>
+</head>
+
+<body>
+    <section class="cart">
+        <h1>View cart <i class="fa-solid fa-bag-shopping"></i></h1>
+    </section>
+    <div id="cart">
+
+        <!-- <div>Photo</div> -->
+        <div id="part1">
+            <span class="text1">Product Id</span>
+            <span class="text2">1001</span>
+
+        </div>
+        <div id="part2">
+
+            <span class="text1">Product</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4F8Z6WPJrO-E_VPFqOAP_pRCifMXr6gYxbHw3mrgP_A&usqp=CAU&ec=48600112"
+                alt="">
+            <span class="text2">Addidas shoes</span>
+        </div>
+        <div id="part3">
+            <span>Size</span>
+            <select name="size" id="">
+                <option value="">4.5</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+            </select>
+        </div>
+        <div id="part4">
+            <span class=".text1"> Quntity </span>
+            <input type="number" name="" onchange="total()" id="quantity" value="1" min="1" max="5">
+
+        </div>
+        <div id="part5">
+            <span>Price</span>
+            <span><input type="text" id="price" value="5500" readonly></span>
+
+        </div>
+        <div id="part6">
+            <span>Action</span>
+            <a href="#">Delete</a>
+        </div>
+
+    </div>
+    <section id="total">
+        <div class="part1">
+            <h2>Subtotal Rs.</h2><span id="subt">5500</span>
+        </div>
+        <div class="part2">
+            <h2>Discount(10% discount)</h2><span id="disc">550&emsp;</span>
+        </div>
+        <div class="part3">
+            <h2>Total After Discount</h2><span id="afterdisc">4950&emsp;</span>
+        </div>
+    </section>
+</body>
+
+</html>

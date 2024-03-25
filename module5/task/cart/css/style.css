@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: auto;
+}
+.cart{
+    height: auto;
+}
+.cart h1{
+    font-size: 45px;
+    text-align: center;
+    line-height: 2;
+}
+#cart{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+#part1{
+    display: grid;
+    grid-template-rows: auto auto ;
+    grid-template-columns: auto;
+    gap: 50px;
+}
+#part2{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    background-color: #000;
+        color: #fff ;
+        padding : 10px  20px;
+}
+#part2 img{
+    height: auto;
+    width: auto;
+}
+#part3{
+    display: grid;
+    grid-template-rows: auto auto ;
+    grid-template-columns: auto;
+    gap: 40px;
+}
+#part4{
+    display: grid;
+    grid-template-rows: auto auto ;
+    grid-template-columns: auto;
+    gap: 9vh;
+}
+#part5{
+    display: grid;
+    grid-template-rows: auto auto ;
+    grid-template-columns: auto;
+    gap: 8vh;
+}
+#part6{
+    display: grid;
+    grid-template-rows: auto auto ;
+    grid-template-columns: auto;
+    gap: 8vh;
+}
+span{
+    font-size: 2vw;
+    
+}
+input{
+    height: 8vh;
+    width: 100px;
+    border: none;
+}
+select{
+    height: 40px;
+    width: 60px;
+    background-color: #fff;
+    border: none;
+}
+#total{
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns:auto ;
+    justify-content: start;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+
+}
+#total h2{
+    display: inline;
+}
+#total .part1{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    gap: 4vw;
+    column-gap: 26vw;
+}
+#total .part2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    gap: 4vh;
+    column-gap: 16vw;
+
+}
+#total .part3{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    column-gap: 20vw;
+
+}
+
+@media only screen and (min-width:320px) and (max-width:500px)
+{
+    body{
+        width: 60%;
+        margin: auto;
+    }
+    .cart h1{
+        font-size: 45px;
+        text-align: center;
+        line-height: 2;
+    }
+    #cart{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto ;
+        justify-content: space-around;
+    }
+    #part1{
+        display: grid;
+        grid-template-rows: auto auto ;
+        grid-template-columns: auto;
+    }
+    #part2{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-area: 1/ 1/ 4/ 2;
+        justify-items: center;
+        background-color: #000;
+        color: #fff ;
+        padding : 0vh  5vw;
+    }
+    #part2 img{
+        height: 150px;
+        width: 150px;
+    }
+    #part3{
+        display: grid;
+        grid-template-rows: auto auto ;
+        grid-template-columns: auto;
+    }
+    #part4{
+        display: grid;
+        grid-template-rows: auto auto ;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    #part5{
+        display: grid;
+        grid-template-rows: auto auto ;
+        grid-template-columns: auto;
+        gap: 2vh;
+    }
+    #part6{
+        display: grid;
+        grid-template-rows: auto auto ;
+        grid-template-columns: auto;
+        gap: 2vh;
+    }
+    span{
+        font-size: 3vw;
+        
+    }
+    #total{
+        margin-top: 60px;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns:auto ;
+        justify-content: start;
+        align-items: center;
+        background-color: #000;
+        color: #fff;
+        row-gap: 4vh;
+    }
+    #total .part1{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        column-gap: 24vw;
+    }
+    #total .part2{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        column-gap: 5vw;
+    
+    }
+    #total .part3{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+    }
+}
